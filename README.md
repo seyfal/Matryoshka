@@ -49,5 +49,5 @@ The Matryoshka Doll Visualizer is a console-based program that artfully illustra
    - Follow the on-screen instructions and input the desired number of Matryoshka dolls.
 
 4. **Visualization**:
-   - Witness the elegant representation of your chosen number of Matryoshka dolls, right in your console.
+   - See the representation of your chosen number of Matryoshka dolls in the console.
 
