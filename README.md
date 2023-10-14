@@ -1,13 +1,47 @@
 # Matryoshka
-program that prints number of given Matryoshka's
 
-The steps described below will help you make progress.  You may want to see if you can first do it on your own without these steps.  Then if you get stuck you can come back and take a look.
-After prompting for how many dolls, use a loop to display a single forward slash on a single line for each section, with a line of three dashes after each one.  Thus if the user chooses 3 dolls the output might look like:
+Matryoshka is a simplistic console program that generates a representation of the iconic Russian nesting dolls, known as Matryoshka dolls, based on user input.
 
-2. Add a loop inside your existing loop so each doll has the appropriate number of lines, though each line is still just a forward slash.  This should work for any input number, giving the right number of dolls, and the right number of lines per doll.
+## Overview
 
-3. Add a loop or a setw() output width specifier to display the appropriate number of blanks before each forward slash.  To do this you will need to figure out a formula.  On each line you know how many dolls there are and which line you are on.  Using these two numbers figure out some formula that gives the appropriate width of blank spaces to be displayed before each '/'.  Your output should now look like:
+This program prompts the user for the number of dolls they'd like to see. It then generates a depiction of the dolls, from the largest to the smallest, each nested within the other. 
 
-4. Now that we have the top section of the doll, lets add an additional loop that will generate the dolls bottom section. Maybe also add the code to give the correct number of leading spaces before the "-" lines as well.  This should now look like:
+## Program Execution Steps
 
-5. Similarly continue with figuring out the number of blank spaces to be displayed before the '\' for top section and  "/" for bottom section is displayed at the end of each line.  At this point you've probably got the hang of it, breaking down the problem into smaller steps where each one may be challenging, but possible to do.  Don't forget to check the programs grading criteria in the syllabus, and don't forget to submit the final version to Gradescope so we can give you program style points.
+1. **Initialization**: Start by prompting the user for the number of dolls they'd like to generate.
+
+2. **Generating Top Sections**:
+   - Loop over the number of dolls. For each doll, print a series of forward slashes (`/`) representing the top of the doll.
+   - For positioning, calculate the required spaces before each forward slash. This is dependent on the doll number and the line number. Use either loops or `setw()` for this.
+
+3. **Generating Bottom Sections**:
+   - Within the same loop, print the bottom half of the doll using backslashes (`\`).
+   - Just as before, calculate the required spaces to position the backslashes correctly.
+
+4. **Final Touches**:
+   - To better delineate between dolls, print a series of dashes (`-`) after each complete doll.
+   - Ensure that the entire representation scales correctly based on user input.
+
+## Getting Started
+
+### Prerequisites
+- C++ Compiler (e.g., `g++`)
+- Basic understanding of loops and conditional statements in C++
+
+### Installation & Execution
+
+1. Clone or download the repository to your system.
+2. Navigate to the directory containing the program's source code.
+3. Compile the source code:
+```
+g++ -o Matryoshka main.cpp
+```
+4. Execute the program:
+```
+./Matryoshka
+```
+5. Follow the on-screen prompts to generate your Matryoshka dolls.
+
+## Conclusion
+
+Matryoshka offers a delightful visual representation of a cultural icon, translating the intricate art of nesting dolls into lines of code. Dive into the challenge, and enjoy the process of creation!
