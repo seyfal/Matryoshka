@@ -1,47 +1,53 @@
-# Matryoshka
-
-Matryoshka is a simplistic console program that generates a representation of the iconic Russian nesting dolls, known as Matryoshka dolls, based on user input.
+# Matryoshka Doll Visualizer
 
 ## Overview
 
-This program prompts the user for the number of dolls they'd like to see. It then generates a depiction of the dolls, from the largest to the smallest, each nested within the other. 
+The Matryoshka Doll Visualizer is a console-based program that artfully illustrates the iconic Russian nesting dolls, commonly known as Matryoshka dolls. The program leverages user input to determine the number of dolls to be displayed, presenting a sequence of dolls that nest within each other.
 
-## Program Execution Steps
+## Features
 
-1. **Initialization**: Start by prompting the user for the number of dolls they'd like to generate.
+1. **User Input**: The program begins by seeking the user's input, asking for the number of dolls they'd like to visualize.
 
-2. **Generating Top Sections**:
-   - Loop over the number of dolls. For each doll, print a series of forward slashes (`/`) representing the top of the doll.
-   - For positioning, calculate the required spaces before each forward slash. This is dependent on the doll number and the line number. Use either loops or `setw()` for this.
+2. **Top Sections Generation**:
+   - Using loops, the program prints a series of forward slashes (`/`), symbolizing the top part of the doll.
+   - The program smartly calculates the appropriate number of spaces needed before each slash to ensure accurate positioning. This calculation is tailored to the doll's sequence number and the current line being printed.
 
-3. **Generating Bottom Sections**:
-   - Within the same loop, print the bottom half of the doll using backslashes (`\`).
-   - Just as before, calculate the required spaces to position the backslashes correctly.
+3. **Bottom Sections Generation**:
+   - The program also uses backslashes (`\`) to depict the bottom half of the Matryoshka doll.
+   - Again, precision is ensured in the positioning of these backslashes, using calculated spaces.
 
-4. **Final Touches**:
-   - To better delineate between dolls, print a series of dashes (`-`) after each complete doll.
-   - Ensure that the entire representation scales correctly based on user input.
+4. **Doll Separation**:
+   - To enhance the visual clarity between nested dolls, the program introduces a series of dashes (`-`) after the representation of each doll.
+
+5. **Scalability**:
+   - Regardless of user input, the program ensures that the entire visual representation scales and adjusts correctly.
 
 ## Getting Started
 
 ### Prerequisites
-- C++ Compiler (e.g., `g++`)
-- Basic understanding of loops and conditional statements in C++
 
-### Installation & Execution
+- A C++ Compiler (e.g., `g++`).
+- Familiarity with basic programming concepts like loops and conditional statements.
 
-1. Clone or download the repository to your system.
-2. Navigate to the directory containing the program's source code.
-3. Compile the source code:
-```
-g++ -o Matryoshka main.cpp
-```
-4. Execute the program:
-```
-./Matryoshka
-```
-5. Follow the on-screen prompts to generate your Matryoshka dolls.
+### How to Use
 
-## Conclusion
+1. **Setup**:
+   - Clone or download the repository containing the source code to your machine.
+   - Navigate to the directory housing the program's source code.
 
-Matryoshka offers a delightful visual representation of a cultural icon, translating the intricate art of nesting dolls into lines of code. Dive into the challenge, and enjoy the process of creation!
+2. **Compilation**:
+   - Compile the source code using the following command:
+     ```
+     g++ -o Matryoshka main.cpp
+     ```
+
+3. **Execution**:
+   - Run the program with:
+     ```
+     ./Matryoshka
+     ```
+   - Follow the on-screen instructions and input the desired number of Matryoshka dolls.
+
+4. **Visualization**:
+   - Witness the elegant representation of your chosen number of Matryoshka dolls, right in your console.
+
